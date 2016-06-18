@@ -111,8 +111,6 @@
 }
 
 - (void)keyboardWillHide:(NSNotification*)notification{
-    NSDictionary *userInfo = [notification userInfo];
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:[notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
     [UIView setAnimationCurve:[notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue]];
@@ -126,7 +124,7 @@
 
 - (void)_setBottomOffset:(CGFloat)offset{
     _bottomView.frame = CGRectMake(0, self.view.bounds.size.height - 40 - offset, self.view.bounds.size.width, 40);
-    _tableView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 40 - offset);
+    _tableView.frame = CGRectMake(0, -offset, self.view.bounds.size.width, self.view.bounds.size.height - 40);
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
