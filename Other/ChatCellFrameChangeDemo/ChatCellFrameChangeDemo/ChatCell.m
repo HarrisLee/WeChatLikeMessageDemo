@@ -36,13 +36,15 @@
     return self;
 }
 
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
 
 - (void)_layoutAsLeft{
     _headView.center = CGPointMake(15 + 10, 15 + 10);
+    _headView.bounds = CGRectMake(0, 0, 30, 30);
     
-//    _headView.frame = CGRectMake(0, 0, 30, 30);
-    
-    [_textView sizeToFit];
     CGSize textSize = [_textView sizeThatFits:CGSizeMake(200, FLT_MAX)];
     _textView.bounds = CGRectMake(0, 0, textSize.width, textSize.height);
     _textView.center = CGPointMake(10+30+10+textSize.width/2, textSize.height/2+ 10);
@@ -50,8 +52,8 @@
 
 - (void)_layoutAsRight{
     _headView.center = CGPointMake(SCREEN_WIDTH - (15 + 10), 15 + 10);
+    _headView.bounds = CGRectMake(0, 0, 30, 30);
     
-    [_textView sizeToFit];
     CGSize textSize = [_textView sizeThatFits:CGSizeMake(200, FLT_MAX)];
     _textView.bounds = CGRectMake(0, 0, textSize.width, textSize.height);
     _textView.center = CGPointMake(SCREEN_WIDTH - (30 + 10) -10- textSize.width/2, textSize.height/2+ 10);

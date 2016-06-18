@@ -77,6 +77,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
 //    [self _fillCell:cell indexPath:indexPath];
     
     [UIView performWithoutAnimation:^{
@@ -98,20 +99,34 @@
     CGRect keyboardRect = [aValue CGRectValue];
     CGFloat height = keyboardRect.size.height;
     
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:[notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
+    [UIView setAnimationCurve:[notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue]];
+    [UIView setAnimationBeginsFromCurrentState:YES];
     [self _setBottomOffset:height];
+    [self.view layoutIfNeeded];
+    [UIView commitAnimations];
+    
+    [self _scrollTableViewToBottom];
 }
 
 - (void)keyboardWillHide:(NSNotification*)notification{
+    NSDictionary *userInfo = [notification userInfo];
     
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:[notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
+    [UIView setAnimationCurve:[notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue]];
+    [UIView setAnimationBeginsFromCurrentState:YES];
     [self _setBottomOffset:0];
+    [self.view layoutIfNeeded];
+    [UIView commitAnimations];
+    
+    [self _scrollTableViewToBottom];
 }
 
 - (void)_setBottomOffset:(CGFloat)offset{
-    [UIView animateWithDuration:0.2 animations:^{
-        _bottomView.frame = CGRectMake(0, self.view.bounds.size.height - 40 - offset, self.view.bounds.size.width, 40);
-        _tableView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 40 - offset);
-    }];
-    [self _scrollTableViewToBottom];
+    _bottomView.frame = CGRectMake(0, self.view.bounds.size.height - 40 - offset, self.view.bounds.size.width, 40);
+    _tableView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 40 - offset);
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
