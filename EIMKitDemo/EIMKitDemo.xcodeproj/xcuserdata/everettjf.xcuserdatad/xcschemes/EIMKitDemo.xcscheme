@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D10DB6741D15D8BE004CDDEC"
+               BlueprintIdentifier = "D10DB6971D15DA7E004CDDEC"
                BuildableName = "EIMKitDemo.app"
                BlueprintName = "EIMKitDemo"
                ReferencedContainer = "container:EIMKitDemo.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D10DB6741D15D8BE004CDDEC"
+            BlueprintIdentifier = "D10DB6971D15DA7E004CDDEC"
             BuildableName = "EIMKitDemo.app"
             BlueprintName = "EIMKitDemo"
             ReferencedContainer = "container:EIMKitDemo.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D10DB6741D15D8BE004CDDEC"
+            BlueprintIdentifier = "D10DB6971D15DA7E004CDDEC"
             BuildableName = "EIMKitDemo.app"
             BlueprintName = "EIMKitDemo"
             ReferencedContainer = "container:EIMKitDemo.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D10DB6741D15D8BE004CDDEC"
+            BlueprintIdentifier = "D10DB6971D15DA7E004CDDEC"
             BuildableName = "EIMKitDemo.app"
             BlueprintName = "EIMKitDemo"
             ReferencedContainer = "container:EIMKitDemo.xcodeproj">

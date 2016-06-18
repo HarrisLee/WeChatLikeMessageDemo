@@ -7,98 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2E9FC6FD4796073D9BC6192 /* libPods-EIMKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3273D935B23B459A0548877F /* libPods-EIMKitDemo.a */; };
-		D10DB67A1D15D8BE004CDDEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DB6791D15D8BE004CDDEC /* main.m */; };
-		D10DB67D1D15D8BE004CDDEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DB67C1D15D8BE004CDDEC /* AppDelegate.m */; };
-		D10DB6801D15D8BE004CDDEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DB67F1D15D8BE004CDDEC /* ViewController.m */; };
-		D10DB6831D15D8BE004CDDEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DB6811D15D8BE004CDDEC /* Main.storyboard */; };
-		D10DB6851D15D8BE004CDDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10DB6841D15D8BE004CDDEC /* Assets.xcassets */; };
-		D10DB6881D15D8BE004CDDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DB6861D15D8BE004CDDEC /* LaunchScreen.storyboard */; };
+		D10DB69D1D15DA7E004CDDEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DB69C1D15DA7E004CDDEC /* main.m */; };
+		D10DB6A01D15DA7E004CDDEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DB69F1D15DA7E004CDDEC /* AppDelegate.m */; };
+		D10DB6A31D15DA7E004CDDEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DB6A21D15DA7E004CDDEC /* ViewController.m */; };
+		D10DB6A61D15DA7E004CDDEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DB6A41D15DA7E004CDDEC /* Main.storyboard */; };
+		D10DB6A81D15DA7E004CDDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10DB6A71D15DA7E004CDDEC /* Assets.xcassets */; };
+		D10DB6AB1D15DA7E004CDDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DB6A91D15DA7E004CDDEC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2006377EFFE860BD1486C20F /* Pods-EIMKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EIMKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EIMKitDemo/Pods-EIMKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		3273D935B23B459A0548877F /* libPods-EIMKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EIMKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D10DB6751D15D8BE004CDDEC /* EIMKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EIMKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D10DB6791D15D8BE004CDDEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D10DB67B1D15D8BE004CDDEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D10DB67C1D15D8BE004CDDEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D10DB67E1D15D8BE004CDDEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D10DB67F1D15D8BE004CDDEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D10DB6821D15D8BE004CDDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D10DB6841D15D8BE004CDDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D10DB6871D15D8BE004CDDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D10DB6891D15D8BE004CDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB1DFFD8FFE0A9590D0868D0 /* Pods-EIMKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EIMKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EIMKitDemo/Pods-EIMKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D10DB6981D15DA7E004CDDEC /* EIMKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EIMKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10DB69C1D15DA7E004CDDEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D10DB69E1D15DA7E004CDDEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D10DB69F1D15DA7E004CDDEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D10DB6A11D15DA7E004CDDEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D10DB6A21D15DA7E004CDDEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D10DB6A51D15DA7E004CDDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D10DB6A71D15DA7E004CDDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D10DB6AA1D15DA7E004CDDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D10DB6AC1D15DA7E004CDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D10DB6721D15D8BE004CDDEC /* Frameworks */ = {
+		D10DB6951D15DA7E004CDDEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2E9FC6FD4796073D9BC6192 /* libPods-EIMKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15A2DED6FE3A98EA8016D159 /* Frameworks */ = {
+		D10DB68F1D15DA7E004CDDEC = {
 			isa = PBXGroup;
 			children = (
-				3273D935B23B459A0548877F /* libPods-EIMKitDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7A3B10BF678B45E15245200 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2006377EFFE860BD1486C20F /* Pods-EIMKitDemo.debug.xcconfig */,
-				EB1DFFD8FFE0A9590D0868D0 /* Pods-EIMKitDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D10DB66C1D15D8BE004CDDEC = {
-			isa = PBXGroup;
-			children = (
-				D10DB6771D15D8BE004CDDEC /* EIMKitDemo */,
-				D10DB6761D15D8BE004CDDEC /* Products */,
-				C7A3B10BF678B45E15245200 /* Pods */,
-				15A2DED6FE3A98EA8016D159 /* Frameworks */,
+				D10DB69A1D15DA7E004CDDEC /* EIMKitDemo */,
+				D10DB6991D15DA7E004CDDEC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D10DB6761D15D8BE004CDDEC /* Products */ = {
+		D10DB6991D15DA7E004CDDEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D10DB6751D15D8BE004CDDEC /* EIMKitDemo.app */,
+				D10DB6981D15DA7E004CDDEC /* EIMKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D10DB6771D15D8BE004CDDEC /* EIMKitDemo */ = {
+		D10DB69A1D15DA7E004CDDEC /* EIMKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D10DB67B1D15D8BE004CDDEC /* AppDelegate.h */,
-				D10DB67C1D15D8BE004CDDEC /* AppDelegate.m */,
-				D10DB67E1D15D8BE004CDDEC /* ViewController.h */,
-				D10DB67F1D15D8BE004CDDEC /* ViewController.m */,
-				D10DB6811D15D8BE004CDDEC /* Main.storyboard */,
-				D10DB6841D15D8BE004CDDEC /* Assets.xcassets */,
-				D10DB6861D15D8BE004CDDEC /* LaunchScreen.storyboard */,
-				D10DB6891D15D8BE004CDDEC /* Info.plist */,
-				D10DB6781D15D8BE004CDDEC /* Supporting Files */,
+				D10DB69E1D15DA7E004CDDEC /* AppDelegate.h */,
+				D10DB69F1D15DA7E004CDDEC /* AppDelegate.m */,
+				D10DB6A11D15DA7E004CDDEC /* ViewController.h */,
+				D10DB6A21D15DA7E004CDDEC /* ViewController.m */,
+				D10DB6A41D15DA7E004CDDEC /* Main.storyboard */,
+				D10DB6A71D15DA7E004CDDEC /* Assets.xcassets */,
+				D10DB6A91D15DA7E004CDDEC /* LaunchScreen.storyboard */,
+				D10DB6AC1D15DA7E004CDDEC /* Info.plist */,
+				D10DB69B1D15DA7E004CDDEC /* Supporting Files */,
 			);
 			path = EIMKitDemo;
 			sourceTree = "<group>";
 		};
-		D10DB6781D15D8BE004CDDEC /* Supporting Files */ = {
+		D10DB69B1D15DA7E004CDDEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D10DB6791D15D8BE004CDDEC /* main.m */,
+				D10DB69C1D15DA7E004CDDEC /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,16 +82,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D10DB6741D15D8BE004CDDEC /* EIMKitDemo */ = {
+		D10DB6971D15DA7E004CDDEC /* EIMKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D10DB68C1D15D8BE004CDDEC /* Build configuration list for PBXNativeTarget "EIMKitDemo" */;
+			buildConfigurationList = D10DB6AF1D15DA7E004CDDEC /* Build configuration list for PBXNativeTarget "EIMKitDemo" */;
 			buildPhases = (
-				815C044E2B88AEC45EEE4285 /* [CP] Check Pods Manifest.lock */,
-				D10DB6711D15D8BE004CDDEC /* Sources */,
-				D10DB6721D15D8BE004CDDEC /* Frameworks */,
-				D10DB6731D15D8BE004CDDEC /* Resources */,
-				33E5A9CA0C3A57D8BF93F5E3 /* [CP] Embed Pods Frameworks */,
-				15FEF66AE33CE481F878550C /* [CP] Copy Pods Resources */,
+				D10DB6941D15DA7E004CDDEC /* Sources */,
+				D10DB6951D15DA7E004CDDEC /* Frameworks */,
+				D10DB6961D15DA7E004CDDEC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -123,24 +96,24 @@
 			);
 			name = EIMKitDemo;
 			productName = EIMKitDemo;
-			productReference = D10DB6751D15D8BE004CDDEC /* EIMKitDemo.app */;
+			productReference = D10DB6981D15DA7E004CDDEC /* EIMKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D10DB66D1D15D8BE004CDDEC /* Project object */ = {
+		D10DB6901D15DA7E004CDDEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = everettjf;
 				TargetAttributes = {
-					D10DB6741D15D8BE004CDDEC = {
+					D10DB6971D15DA7E004CDDEC = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = D10DB6701D15D8BE004CDDEC /* Build configuration list for PBXProject "EIMKitDemo" */;
+			buildConfigurationList = D10DB6931D15DA7E004CDDEC /* Build configuration list for PBXProject "EIMKitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,103 +121,55 @@
 				en,
 				Base,
 			);
-			mainGroup = D10DB66C1D15D8BE004CDDEC;
-			productRefGroup = D10DB6761D15D8BE004CDDEC /* Products */;
+			mainGroup = D10DB68F1D15DA7E004CDDEC;
+			productRefGroup = D10DB6991D15DA7E004CDDEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D10DB6741D15D8BE004CDDEC /* EIMKitDemo */,
+				D10DB6971D15DA7E004CDDEC /* EIMKitDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D10DB6731D15D8BE004CDDEC /* Resources */ = {
+		D10DB6961D15DA7E004CDDEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D10DB6881D15D8BE004CDDEC /* LaunchScreen.storyboard in Resources */,
-				D10DB6851D15D8BE004CDDEC /* Assets.xcassets in Resources */,
-				D10DB6831D15D8BE004CDDEC /* Main.storyboard in Resources */,
+				D10DB6AB1D15DA7E004CDDEC /* LaunchScreen.storyboard in Resources */,
+				D10DB6A81D15DA7E004CDDEC /* Assets.xcassets in Resources */,
+				D10DB6A61D15DA7E004CDDEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		15FEF66AE33CE481F878550C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EIMKitDemo/Pods-EIMKitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		33E5A9CA0C3A57D8BF93F5E3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EIMKitDemo/Pods-EIMKitDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		815C044E2B88AEC45EEE4285 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D10DB6711D15D8BE004CDDEC /* Sources */ = {
+		D10DB6941D15DA7E004CDDEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D10DB6801D15D8BE004CDDEC /* ViewController.m in Sources */,
-				D10DB67D1D15D8BE004CDDEC /* AppDelegate.m in Sources */,
-				D10DB67A1D15D8BE004CDDEC /* main.m in Sources */,
+				D10DB6A31D15DA7E004CDDEC /* ViewController.m in Sources */,
+				D10DB6A01D15DA7E004CDDEC /* AppDelegate.m in Sources */,
+				D10DB69D1D15DA7E004CDDEC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D10DB6811D15D8BE004CDDEC /* Main.storyboard */ = {
+		D10DB6A41D15DA7E004CDDEC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D10DB6821D15D8BE004CDDEC /* Base */,
+				D10DB6A51D15DA7E004CDDEC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D10DB6861D15D8BE004CDDEC /* LaunchScreen.storyboard */ = {
+		D10DB6A91D15DA7E004CDDEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D10DB6871D15D8BE004CDDEC /* Base */,
+				D10DB6AA1D15DA7E004CDDEC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -252,7 +177,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D10DB68A1D15D8BE004CDDEC /* Debug */ = {
+		D10DB6AD1D15DA7E004CDDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +221,7 @@
 			};
 			name = Debug;
 		};
-		D10DB68B1D15D8BE004CDDEC /* Release */ = {
+		D10DB6AE1D15DA7E004CDDEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -334,24 +259,24 @@
 			};
 			name = Release;
 		};
-		D10DB68D1D15D8BE004CDDEC /* Debug */ = {
+		D10DB6B01D15DA7E004CDDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2006377EFFE860BD1486C20F /* Pods-EIMKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EIMKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.everettjf.EIMKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		D10DB68E1D15D8BE004CDDEC /* Release */ = {
+		D10DB6B11D15DA7E004CDDEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB1DFFD8FFE0A9590D0868D0 /* Pods-EIMKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EIMKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.everettjf.EIMKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,25 +286,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D10DB6701D15D8BE004CDDEC /* Build configuration list for PBXProject "EIMKitDemo" */ = {
+		D10DB6931D15DA7E004CDDEC /* Build configuration list for PBXProject "EIMKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D10DB68A1D15D8BE004CDDEC /* Debug */,
-				D10DB68B1D15D8BE004CDDEC /* Release */,
+				D10DB6AD1D15DA7E004CDDEC /* Debug */,
+				D10DB6AE1D15DA7E004CDDEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D10DB68C1D15D8BE004CDDEC /* Build configuration list for PBXNativeTarget "EIMKitDemo" */ = {
+		D10DB6AF1D15DA7E004CDDEC /* Build configuration list for PBXNativeTarget "EIMKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D10DB68D1D15D8BE004CDDEC /* Debug */,
-				D10DB68E1D15D8BE004CDDEC /* Release */,
+				D10DB6B01D15DA7E004CDDEC /* Debug */,
+				D10DB6B11D15DA7E004CDDEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D10DB66D1D15D8BE004CDDEC /* Project object */;
+	rootObject = D10DB6901D15DA7E004CDDEC /* Project object */;
 }
