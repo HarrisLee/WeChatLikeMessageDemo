@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EIMViewController.h
 //  EIMKitDemo
 //
 //  Created by everettjf on 16/6/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface EIMViewController : UIViewController
 
 @end
-
