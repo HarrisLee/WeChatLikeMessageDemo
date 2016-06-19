@@ -12,11 +12,11 @@
 #import "EIMTextMessageNodeView.h"
 #import "EIMImageMessageNodeView.h"
 #import "EIMMessageManager.h"
+#import "EIMUtility.h"
 
 @interface EIMMessageViewController () <UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
-    NSUInteger _count;
     UIView *_bottomView;
     UITextField *_inputView;
     
@@ -27,15 +27,6 @@
 @end
 
 @implementation EIMMessageViewController
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self _initMessageNodeClass];
-    }
-    return self;
-}
 
 - (void)_initMessageNodeClass{
     _messageNodeClass = [NSMutableArray new];
@@ -51,9 +42,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self _initMessageNodeClass];
     [self _initMessageNodeData];
-    
-    _count = 30;
     
     _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 40, self.view.bounds.size.width, 40)];
     [self.view addSubview:_bottomView];
@@ -89,13 +79,24 @@
 }
 
 - (void)_addItemTapped:(id)sender{
-    ++_count;
+    static int i =0 ,j = 0;
+    
+    EIMMessageWrap *msg;
+    if(++i % 2==0)
+        msg = [EIMMessageWrap createText:++j %2==0 text:@"Hello"];
+    else
+        msg = [EIMMessageWrap createImage:++j % 2 ==0 image:@"image"];
+    
+    [self addMessageNode:msg];
+    
     [_tableView reloadData];
     [self _scrollTableViewToBottom];
 }
 
 - (void)_scrollTableViewToBottom{
-    [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    if(!_messageNodeData)return;
+    if(_messageNodeData.count==0)return;
+    [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_messageNodeData.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -103,14 +104,21 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _count;
+    return _messageNodeData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EIMMultiSelectTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    [UIView performWithoutAnimation:^{
-    }];
+    for (UIView *view in cell.contentView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    EIMMessageNodeData *node = [_messageNodeData objectAtIndex:indexPath.row];
+    [cell.contentView addSubview:node.view];
+    
+//    [UIView performWithoutAnimation:^{
+//    }];
     
     return cell;
 }
@@ -177,6 +185,10 @@
         //Default to Text
         nodeData.view = [[EIMTextMessageNodeView alloc]initWithMessageWrap:nodeData.messageWrap];
     }
+    
+    CGFloat cellHeight = 44;
+    
+    nodeData.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, cellHeight);
 }
 
 - (void)addMessageNode:(EIMMessageWrap*)messageWrap{
@@ -194,6 +206,9 @@
     for (EIMMessageWrap *msg in arr) {
         [self addMessageNode:msg];
     }
+    
+    [_tableView reloadData];
+    [self _scrollTableViewToBottom];
 }
 
 @end
