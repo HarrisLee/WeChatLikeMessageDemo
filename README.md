@@ -1,2 +1,5 @@
 # EIMKit
-Easy Instant Message Kit (Developing)
+
+
+
+https://everettjf.github.io/2016/06/19/reverse-explore-wechat-message-design
