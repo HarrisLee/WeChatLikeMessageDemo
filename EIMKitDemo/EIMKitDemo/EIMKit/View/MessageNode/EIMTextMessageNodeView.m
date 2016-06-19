@@ -28,10 +28,12 @@
         
         _textView = [UILabel new];
         _textView.backgroundColor = [UIColor grayColor];
+        _textView.numberOfLines = 0;
         [self addSubview:_textView];
         
         _textView.text = msg.text;
         
+        CGFloat height = 0;
         if(msg.mine){
             _headView.center = CGPointMake(SCREEN_WIDTH - (15 + 10), 15 + 10);
             _headView.bounds = CGRectMake(0, 0, 30, 30);
@@ -39,6 +41,8 @@
             CGSize textSize = [_textView sizeThatFits:CGSizeMake(200, FLT_MAX)];
             _textView.bounds = CGRectMake(0, 0, textSize.width, textSize.height);
             _textView.center = CGPointMake(SCREEN_WIDTH - (30 + 10) -10- textSize.width/2, textSize.height/2+ 10);
+            
+            height = textSize.height;
         }else{
             _headView.center = CGPointMake(15 + 10, 15 + 10);
             _headView.bounds = CGRectMake(0, 0, 30, 30);
@@ -46,8 +50,15 @@
             CGSize textSize = [_textView sizeThatFits:CGSizeMake(200, FLT_MAX)];
             _textView.bounds = CGRectMake(0, 0, textSize.width, textSize.height);
             _textView.center = CGPointMake(10+30+10+textSize.width/2, textSize.height/2+ 10);
+            
+            height = textSize.height;
         }
         
+        height += 20; // top and bottom edge
+        
+        if(height < 44)height = 44;
+        
+        self.frame = CGRectMake(0, 0, SCREEN_WIDTH, height);
     }
     return self;
 }

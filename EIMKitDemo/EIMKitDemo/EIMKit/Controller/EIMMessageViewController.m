@@ -83,7 +83,7 @@
     
     EIMMessageWrap *msg;
     if(++i % 2==0)
-        msg = [EIMMessageWrap createText:++j %2==0 text:@"Hello"];
+        msg = [EIMMessageWrap createText:++j %2==0 text:@"Helloooooooooooooooooooooooooooooooooooooooooo"];
     else
         msg = [EIMMessageWrap createImage:++j % 2 ==0 image:@"image"];
     
@@ -121,6 +121,11 @@
 //    }];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    EIMMessageNodeData *node = [_messageNodeData objectAtIndex:indexPath.row];
+    return node.cellHeight;
 }
 
 
@@ -186,9 +191,7 @@
         nodeData.view = [[EIMTextMessageNodeView alloc]initWithMessageWrap:nodeData.messageWrap];
     }
     
-    CGFloat cellHeight = 44;
-    
-    nodeData.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, cellHeight);
+    nodeData.cellHeight = nodeData.view.bounds.size.height;
 }
 
 - (void)addMessageNode:(EIMMessageWrap*)messageWrap{
